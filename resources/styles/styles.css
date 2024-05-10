@@ -28,9 +28,9 @@ a {
 
 h1 {
     color: var(--color-1);
-    font-size: 10rem;
+    font-size: 9rem;
     font-family: 'WindSong', serif;
-    opacity: 0.3;
+    opacity: 0.35;
 }
 
 h2, h3, h5 {
@@ -39,7 +39,7 @@ h2, h3, h5 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h3 {
@@ -49,6 +49,8 @@ h3 {
 h4 {
     color: var(--color-5);
 }
+
+/* HEADER START */
 
 header {
     top: 0;
@@ -94,4 +96,109 @@ body {
     width: 100%;
     height: 0 auto;
     margin: 0 auto;
+}
+
+/* SPLASH START */
+
+#splash {
+    top: 12rem;
+    position: relative;
+    display: none; /* Switch to flex to unhide */
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+#splash img {
+    width: 30rem;
+    height: 32rem;
+    object-fit: cover;
+    border: 2px solid var(--color-5);
+    border-radius: 20%;
+}
+
+#splash-name {
+    padding-top: 5rem;
+}
+
+#splash-name h2 {
+    position: relative;
+    top: -7.5rem;
+    letter-spacing: .2rem;
+}
+
+#gradient-border {
+    margin: 0 -4rem;
+    padding: 2px 4rem;
+    background-image: linear-gradient(to left, rgba(185, 151, 110, 0), rgba(185, 151, 110, 1));
+    z-index: -2;
+}
+#splash-info {
+    margin: 0 -4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 7rem;
+    background-image: linear-gradient(to left, rgba(234, 221, 202, 0), rgba(234, 221, 202, 1));
+    z-index: -1;
+}
+
+#splash-links ul {
+    position: relative;
+    top: -5rem;
+    display: inline-flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ABOUT ME START */
+
+#about-me {
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+#about-me img {
+    width: 25rem;
+    height: 30rem;
+    object-fit: cover;
+    border: 2px solid var(--color-5);
+    border-radius: 20%;
+}
+
+#about-me-info {
+    margin: 0 -10rem;
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--color-4);
+    border-radius: 20%;
+    border: 2px solid var(--color-5);
+}
+
+#about-me-info p,
+#about-me-info h1 {
+    padding: .5rem 0;
+}
+
+#about-me h1 {
+    text-align: center;
 }
