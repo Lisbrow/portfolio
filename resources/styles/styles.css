@@ -122,6 +122,10 @@ body {
     border-radius: 50px;
 }
 
+#splash-image {
+    z-index: 3;
+}
+
 #splash-name {
     padding-top: 5rem;
 }
@@ -136,8 +140,8 @@ body {
     margin: 0 -4rem;
     padding: 2px 4rem;
     background-image: linear-gradient(to left, rgba(185, 151, 110, 0), rgba(185, 151, 110, 1));
-    z-index: -2;
 }
+
 #splash-info {
     margin: 0 -6rem;
     display: flex;
@@ -147,7 +151,7 @@ body {
     gap: 2rem;
     padding: 0 7rem;
     background-image: linear-gradient(to left, rgba(234, 221, 202, 0), rgba(234, 221, 202, 1));
-    z-index: -1;
+    z-index: 1;
 }
 
 #splash-links ul {
@@ -159,6 +163,7 @@ body {
     font-size: 1.3rem;
     text-transform: uppercase;
     font-weight: bold;
+    z-index: 2;
 }
 
 /* ABOUT ME START */
