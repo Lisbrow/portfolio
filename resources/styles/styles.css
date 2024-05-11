@@ -57,7 +57,7 @@ header {
     left: 2rem;
     position: absolute;
     width: 100%;
-    display: flex; /* Switch to flex to unhide */ 
+    display: none; /* Switch to flex to unhide */ 
     gap: 2rem;
     align-items: center;
     justify-content: left;
@@ -105,7 +105,7 @@ body {
     top: 12rem;
     left: -5rem;
     position: relative;
-    display: none; /* Switch to flex to unhide */
+    display: flex; /* Switch to flex to unhide */
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -139,7 +139,7 @@ body {
     z-index: -2;
 }
 #splash-info {
-    margin: 0 -4rem;
+    margin: 0 -6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +258,7 @@ body {
 
 #contact {
     width: 100%;
-    display: flex; /* Switch to flex to unhide */
+    display: none; /* Switch to flex to unhide */
     justify-content: center;
 }
 
@@ -357,7 +357,7 @@ footer {
     height: auto;
     padding: 5rem 2rem 1rem;
     overflow: hidden;
-    display: flex;
+    display: none; /* Switch to flex to unhide */
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(to bottom, rgba(234, 221, 202, 0), rgba(234, 221, 202, 1));
