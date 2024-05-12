@@ -19,6 +19,7 @@ html {
     font-family: 'Raleway', sans-serif;
     color: var(--color-6);
     background-color: var(--color-3);
+    overflow-y: scroll;
 }
 
 a {
@@ -83,7 +84,7 @@ nav a {
     width: 20%;
 }
 
-#header-socials {
+#header-socials, #footer-socials {
     font-size: 1.3rem;
 }
 
@@ -99,7 +100,6 @@ body {
     width: 100%;
     height: 0 auto;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 /* SECTION START */
@@ -115,7 +115,7 @@ body {
 /* SPLASH START */
 
 #splash {
-    right: 5rem;
+    right: 3rem;
     width: 100%;
     min-height: 100vh;
     position: absolute;
@@ -257,9 +257,17 @@ body {
     gap: 2rem;
 }
 
+.projects-description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
 .projects img {
-    width: 20rem;
-    height: 20rem;
+    width: 8rem;
+    height: 8rem;
     object-fit: cover;
     border: 1px solid #647E68;
 }
@@ -324,6 +332,10 @@ body {
     flex-direction: column;
 }
 
+#contact-socials {
+    font-size: 2rem;
+}
+
 #contact-form-container {
     width: 100%;
     display: flex;
@@ -380,7 +392,6 @@ footer {
     width: 100%;
     height: auto;
     padding: 5rem 2rem 1rem;
-    overflow: hidden;
     display: none; /* Switch to flex to unhide */
     align-items: center;
     justify-content: space-between;
@@ -395,10 +406,6 @@ footer h4 {
 
 #footer-info {
     text-align: right;
-}
-
-#footer-socials {
-    font-size: 1.3rem;
 }
 
 @keyframes zoomIn {
