@@ -57,10 +57,12 @@ header {
     position: absolute;
     width: 100%;
     padding: 1rem 2rem;
-    display: flex; /* Switch to flex to unhide */ 
+    display: none; /* Switch to flex to unhide */ 
     align-items: center;
     justify-content: left;
     background-image: linear-gradient(to top, rgba(234, 221, 202, 0), rgba(234, 221, 202, 1));
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 nav ul {
@@ -97,6 +99,7 @@ body {
     width: 100%;
     height: 0 auto;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 /* SECTION START */
@@ -112,16 +115,16 @@ body {
 /* SPLASH START */
 
 #splash {
-    top: 12rem;
-    left: -5rem;
-    position: relative;
+    right: 5rem;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
     display: flex; /* Switch to flex to unhide */
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 1rem;
     text-align: center;
-    padding: 0 2rem;
+    opacity: 1;
 }
 
 #splash img {
@@ -182,12 +185,12 @@ body {
     width: 100%;
     margin: 0 auto;
     display: none; /* Switch to flex to unhide */
-    position: relative;
+    position: absolute;
     justify-content: center;
+    opacity: 0;
 }
 
 #about-wrapper {
-    margin-top: 10rem;
     width: 60%;
     display: flex;
     align-items: center;
@@ -227,12 +230,12 @@ body {
     width: 100%;
     margin: 0 auto;
     display: none; /* Switch to flex to unhide */
-    position: relative;
+    position: absolute;
     justify-content: center;
+    opacity: 0;
 }
 
 #projects-wrapper {
-    margin-top: 10rem;
     width: 80%;
     display: flex;
     align-items: center;
@@ -279,12 +282,12 @@ body {
     width: 100%;
     margin: 0 auto;
     display: none; /* Switch to flex to unhide */
-    position: relative;
+    position: absolute;
     justify-content: center;
+    opacity: 0;
 }
 
 #contact-wrapper {
-    margin-top: 10rem;
     width: 50%;
     display: flex;
     align-items: center;
@@ -372,16 +375,18 @@ body {
 /* FOOTER START */
 
 footer {
-    margin-top: 5rem;
+    bottom: 0;
     position: absolute;
     width: 100%;
     height: auto;
     padding: 5rem 2rem 1rem;
     overflow: hidden;
-    display: flex; /* Switch to flex to unhide */
+    display: none; /* Switch to flex to unhide */
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(to bottom, rgba(234, 221, 202, 0), rgba(234, 221, 202, 1));
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 footer h4 {
@@ -394,4 +399,21 @@ footer h4 {
 
 #footer-socials {
     font-size: 1.3rem;
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+
+/* Apply exit animation */
+#splash.exit {
+    animation: zoomIn 1s ease forwards;
 }
