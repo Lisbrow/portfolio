@@ -63,7 +63,7 @@ h4 {
 header {
   top: 0;
   position: relative;
-  min-width: 100vh;
+  width: 100%;
   padding: 1rem 2rem;
   display: none; /* Switch to flex to unhide */
   align-items: center;
@@ -228,7 +228,7 @@ body {
 }
 
 #about-wrapper {
-  width: 70%;
+  width: 65%;
   flex-direction: row;
 }
 
@@ -269,15 +269,15 @@ body {
 
 #projects-containers {
   display: flex;
-  align-items: flex-start;
-  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .projects {
-  width: 48%;
+  width: 49%;
   height: 20rem;
   display: flex;
   align-self: center;
@@ -426,7 +426,7 @@ button {
 footer {
   bottom: 0;
   position: relative;
-  min-width: 100vh;
+  width: 100%;
   height: auto;
   padding:  5rem 2rem 1rem;
   display: none; /* Switch to flex to unhide */
@@ -567,8 +567,8 @@ footer h4 {
     top: -4rem;
   }
 
-  .projects {
-    width: 48%;
+  #about-wrapper {
+    width: 70%;
   }
 }
 
@@ -647,7 +647,7 @@ footer h4 {
   }
 
   .projects {
-    width: 80%;
+    width: 100%;
     height: 22rem;
   }
 
@@ -709,10 +709,6 @@ footer h4 {
 @media only screen and (max-width: 940px) {
   #projects-wrapper {
     width: 80%;
-  }
-
-  .projects {
-    width: 90%;
   }
 
   .projects img {
@@ -815,7 +811,6 @@ footer h4 {
   }
 
   .projects {
-    width: 85%;
     height: auto;
   }
 
@@ -907,6 +902,17 @@ footer h4 {
   }
 }
 
+@media only screen and (max-width: 625px) {
+  #header-name {
+    font-size: 2.3rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
 @media only screen and (max-width: 540px) {
   html {
     font-size: 11px;
@@ -943,6 +949,26 @@ footer h4 {
   #about img {
     width: 28rem;
     height: 23rem;
+  }
+
+  #header-name {
+    font-size: 2.0rem;
+    width: 18rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+    font-size: 1rem;
+    align-content: center;
+  }
+
+  #header-links {
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #header-socials {
+    display: none;
   }
 }
 
@@ -990,6 +1016,16 @@ footer h4 {
 
   #contact-info {
     flex-direction: column;
+  }
+
+  #header-name {
+    font-size: 1.5rem;
+    width: 16rem;
+  }
+
+  nav ul {
+    gap: .5rem;
+    font-size: 0.8rem;
   }
 }
 
