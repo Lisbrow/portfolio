@@ -16,7 +16,7 @@ Welcome to my personal portfolio, showcasing the projects I've completed as part
 
 This portfolio serves as a representation of my journey through the full-stack engineering coursework. It features a splash/landing page that transitions seamlessly to reveal various sections such as an about me page, projects showcase, and more. My aim was to create an interactive and visually appealing portfolio to highlight my skills and projects.
 
-## Technologies Used
+## Languages Used
 
 - HTML
 - CSS
