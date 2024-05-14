@@ -421,6 +421,12 @@ button {
   cursor: pointer;
 }
 
+#thank-you-message {
+  display: none;
+  color: var(--color-2);
+  font-weight: bold;
+}
+
 /* FOOTER START */
 
 footer {

@@ -131,7 +131,7 @@
                             target="_blank"><i class="fa fa-git-square" aria-hidden="true"></i></a></li>
                     </p>
                         </div>
-                        <form action="mailto:l.brown91910@gmail.com" method="POST" enctype="multipart/form-data">
+                        <form id="contact-form-email">
                             <div id="contact-form-container">
                                 <div class="contact-form">
                                     <label for="name">Full Name:</label>
@@ -146,10 +146,13 @@
                                     <textarea name="message" name="message" id="message" placeholder="Enter your message..."></textarea>
                                 </div>
                                 <div class="contact-form">
-                                    <button type="submit">Submit</button>
+                                    <button type="button" onclick="sendEmail()">Send Email</button>
                                 </div>
                             </div>
-                        </form>
+                        </form>                        
+                    </div>
+                    <div id="thank-you-message">
+                        <h3>Thank you for your message!</h3>
                     </div>
                 </div>
             </section>
@@ -163,6 +166,7 @@
         </div>
     </footer>
     <script src="./resources/javascript/showhide.js"></script>
+    <script src="./resources/javascript/sendemail.js"></script>
 </body>
 
 </html>
