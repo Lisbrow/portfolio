@@ -430,7 +430,7 @@ button {
 /* FOOTER START */
 
 footer {
-  bottom: 0;
+  bottom: -3.5rem;
   position: relative;
   width: 100%;
   height: auto;
@@ -445,6 +445,7 @@ footer {
   );
   opacity: 0;
   transition: opacity 0.5s;
+  z-index: -1;
 }
 
 footer h4 {
